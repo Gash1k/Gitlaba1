@@ -25,6 +25,7 @@ circumference = calculate_circumference(radius)
 area = calculate_area(radius)
 
 
+
 print("Длина окружности: ", circumference)
 print("Площадь окружности: ", area)
 print("Площадь кругового сектора: ", sector_area)
