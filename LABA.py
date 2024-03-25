@@ -17,12 +17,13 @@ def calculate_sector_area(radius, angle):
 
 # Пользовательский ввод радиуса окружности и угла кругового сектора
 radius = float(input("Введите радиус окружности: "))
-angle = float(input("Введите угол кругового сектора (в градусах): "))
-
+angle = float(input("Введите угол кругового сектора ( в градусах): "))
+if 0<=angle<=360:
+    sector_area = calculate_sector_area(radius, angle)
 # Вычисление и вывод результата
 circumference = calculate_circumference(radius)
 area = calculate_area(radius)
-sector_area = calculate_sector_area(radius, angle)
+
 
 print("Длина окружности: ", circumference)
 print("Площадь окружности: ", area)
